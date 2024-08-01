@@ -1,0 +1,291 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+nav {
+  height: 72px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 16px;
+  background-color: #4e3f44;
+}
+
+header {
+  background-color: #dd5835;
+  height: calc(104vh - 72px);
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.intro {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 72px;
+  color: #f0bb6d;
+  padding-right: 24px;
+}
+
+.subheader {
+  font-size: 32px;
+  color: #deb391;
+}
+
+.logo {
+  width: 400px;
+  height: 12vh;
+}
+
+ul {
+  display: flex;
+}
+
+li {
+  list-style: none;
+  padding-left: 16px;
+}
+
+a {
+  color: #699cb1;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.input-button {
+  background-color: #4e3f44;
+  color: #deb391;
+  padding: 8px 16px;
+  margin-top: 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+/*
+
+ABOUT SECTION
+
+*/
+
+#about {
+  padding: 48px 0;
+  background-color: #4e3f44;
+  color: #deb391;
+}
+
+.section__description {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 24px;
+  margin: 0 auto;
+  padding: 8px 0px 8px 0px;
+}
+
+.about__img-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-left: 48px;
+}
+
+.fam__photo {
+  margin: 0px 0px 48px 8px;
+  box-shadow: 3px 3px 3px 0px #000;
+}
+
+.about__photo {
+  height: 16vh;
+}
+
+.about__h2 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: #f0bb6d;
+  margin-bottom: 24px;
+}
+
+/*
+
+GITHUB SECTION
+
+*/
+
+#github {
+  padding: 48px 0;
+  background-color: #beb6a9;
+  color: #4e3f44;
+}
+
+.github__h2 {
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  color: #dd5835;
+  margin-bottom: 24px;
+}
+
+.github__description {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  font-size: 24px;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+
+.github__img-wrapper {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.github__img {
+  height: 12vh;
+}
+
+/*
+
+CONTACT SECTION
+
+*/
+
+#contact {
+  padding: 48px 0;
+  background-color: #ecb2bc;
+  color: #344e59;
+}
+
+.contact__h2 {
+  font-size: 54px;
+  font-weight: 700;
+  text-align: center;
+  color: #344e59;
+  margin-bottom: 24px;
+}
+
+form {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  font-size: 32px;
+}
+
+input,
+textarea {
+  margin-bottom: 24px;
+  font-size: 24px;
+  color: #344e59;
+  background-color: #d8d1c7;
+  padding: 8px 16px;
+}
+
+button {
+  align-self: center;
+  max-width: 300px;
+  background-color: #4e3f44;
+  color: #ecb2bc;
+  padding: 8px 16px;
+  margin-top: 24px;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+}
+
+/*
+
+CONTACT SECTION
+
+*/
+
+footer {
+  background-color: #4e3f44;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo {
+  max-width: 480px;
+  height: 12vh;
+}
+
+.footer__links {
+  margin-bottom: 32px;
+}
+
+/*
+RESPONSIVENESS
+*/
+
+/*Small Phones, Tablets, Large Smartphones */
+
+@media (max-width: 728px) {
+  .intro {
+    flex-direction: column;
+  }
+
+  .intro__description {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 24px;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 48px;
+  }
+
+  .input-button {
+    max-width: 240px;
+  }
+
+  .subheader {
+    text-align: center;
+    font-size: 24px;
+  }
+
+  ul {
+    display: none;
+  }
+
+#about .section__description {
+  flex-direction: column;
+}
+
+#about .about__paragraph {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+#about .about__img-wrapper {
+  width: 100%;
+}
+
+#github .github__description {
+  width: 100%;
+}
+
+}

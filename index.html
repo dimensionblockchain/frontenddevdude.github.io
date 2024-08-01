@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scott Baker's mini-site project</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <section>
+      <nav>
+        <img
+          src="./assets/scottbakerminisite.svg"
+          class="logo"
+          alt="logo image and title"
+        />
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#github">github</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </nav>
+      <header>
+        <div class="intro">
+          <div  class="intro__description">
+            <h1>Scott Baker's mini-site project</h1>
+            <p class="subheader">a small generic website project</p>
+            <input
+              type="button"
+              onclick="window.open('http://scottbaker.online' + location.search)"
+              value="Scott Baker's Online Resume"
+              class="input-button"/>
+            </div>
+          <figure>
+            <img src="./assets/laptop.png" alt="home page image" />
+          </figure>
+          </div>
+      </header>
+    </section>
+
+    <main>
+      <section id="about">
+        <h2 class="about__h2">About</h2>
+        <div class="section__description">
+          <p class="about__paragraph">
+            Check out this mini website project I’ve crafted using HTML5 and
+            CSS, adhering to industry best practices. Flexbox really adds to the
+            responsiveness of the page. This project is my way of sharpening my
+            web design and development skills before diving into larger
+            portfolio pieces. <br /><br />
+            After nearly two years away due to long-term disability, I'm excited
+            to re-enter the workforce and showcase my resilience and growth. I'm
+            a fighter, and disability is just a hurdle I've overcome. I'm
+            actively seeking a remote frontend engineering role. My current
+            focus is on enhancing my expertise in HTML5, CSS, JavaScript, and
+            Angular.
+            <br /><br />
+            When I'm not immersed in tech, my heart belongs to my fiancé Sheena,
+            our rat Squirrel, and our cat Princess. Web design and development,
+            however, remains my greatest passion. Since taking a summer Apple
+            HyperCard class on a Mac SE30 back in the '80s, I’ve been hooked on
+            all things computer-related. While I've explored various IT fields
+            during my time on disability, web development has always been a
+            constant. I’ve rediscovered my love for modern HTML, CSS, and Angular,
+            and hold several web certifications from CIW, along with the AWS
+            Solutions Architect certification. I’m also Comptia A+ and Network+
+            certified.
+          </p>
+          <div class="about__img-wrapper">
+            <figure>
+              <img
+                src="./assets/famelay.jpg"
+                class="fam__photo"
+                alt="family photo"
+              />
+            </figure>
+            <figure>
+              <img
+                src="./assets/about.png"
+                alt="about Scott Baker's mini-site project"
+                class="about__photo"
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section id="github">
+        <h2 class="github__h2">GitHub Repos</h2>
+        <div class="github__img-wrapper">
+          <figure>
+            <a
+              href="https://github.com/frontenddevdude?tab=repositories"
+              target="_blank"
+              ><img src="./assets/github.png" class="github__img"
+            /></a>
+          </figure>
+        </div>
+
+        <div class="github__description">
+          <p>
+            Click the GitHub logo above to explore my GitHub page to dive into
+            my diverse coding repositories! You'll find a range of projects,
+            including deep learning and scientific work with Python, TensorFlow,
+            network automation, and Scala coding examples. I also have Jupyter
+            notebooks featuring Apache Spark code. Notably, I've earned the
+            Databricks Apache Spark Developer certification in Scala and two
+            Azure Data Engineering certifications. My experience even includes C
+            systems programming and embedded systems.
+            <br /><br />
+            Thank you for taking the time to read through this. Your interest
+            means a lot to me!
+          </p>
+        </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="contact__h2">Contact</h2>
+        <form action="mailto:scottbakeronlineresume@gmail.com" method="GET">
+          <label for="">Email</label>
+          <input type="email" placeholder="username@example.com" />
+          <label for="">Message</label>
+          <textarea
+            type="text"
+            placeholder="Nice mini website, Scott! We want to hire you!"
+          ></textarea>
+            <button>Contact Me!</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <img
+        src="./assets/scottbakerminisite.svg"
+        class="footer__logo"
+        alt="Scott Baker's mini-site footer area"
+      />
+      <div class="footer__links">
+        <ul>
+          <li><a href="#about">about</a></li>
+          <li><a href="#github">github</a></li>
+          <li><a href="#contact">contact</a></li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+</html>
